@@ -4,14 +4,14 @@ const nodemailer = require("nodemailer");
 const transporter = nodemailer.createTransport({
   service: "hotmail", // if you are using hotmail or outlook
   auth: {
-    user: "YOUR-SENDER-MAIL-ADRESS-HERE",
-    pass: "YOUR-PASSWORD",
+    user: "sender@emailAdress.here",
+    pass: "your.password",
   },
 });
 
 const options = {
-  from: "YOUR-SENDER-MAIL-ADRESS-HERE",
-  to: "YOUR-RECEIVER-MAIL-ADRESS-HERE",
+  from: "sender@emailAdress.here",
+  to: "receiver@emailAdress.here",
   subject: "Sending email with node", // Write the subject here
   text: "THAT WORKED ! 🥳", // Write your message here
 };
